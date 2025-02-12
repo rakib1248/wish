@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { speakText } from "../firebase/voice";
 
 const BirthdayCard = () => {
   const [cardIndex, setCardIndex] = useState(0);
@@ -62,7 +61,6 @@ const BirthdayCard = () => {
 
         <h1 className="text-4xl font-bold text-pink-600">
           {cards[cardIndex].title}
-          {speakText(cards[cardIndex].title)}
         </h1>
         <p className="mt-4 text-gray-700 text-lg">{cards[cardIndex].message}</p>
         <div className="mt-6">
