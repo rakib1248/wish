@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import BirthdayCard from "./Components/hamida";
+import LastDate from "./Components/LastDate";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<BirthdayCard/>} />
+        <Route path="/" element={<LastDate />} />
       </Routes>
     </>
   );
